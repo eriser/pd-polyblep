@@ -82,7 +82,7 @@ t_int* polyblep_perform (t_int* args)
 	
 	while (numSamples--) {
 		t_float t = obj->_phase / TWOPI;
-		t_sample sample = (2.f * t) - 1.f;
+		t_sample sample = (2.f * t) - 1.f; /* Calculate naive sawtooth sample. */
 		t_sample polyblep_value;
 		
 		obj->_phase += phaseIncr;
